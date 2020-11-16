@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#800080</color>
+    <color name="colorPrimaryDark">#670067</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="newColorPrimary">#3F51B5</color>
+    <color name="newColorPrimaryDark">#2f333f</color>
+    <color name="blueLight">#49acd5</color>
+    <color name="green">#FF00FF00</color>
+    <color name="orange">#eaad43</color>
+    <color name="newColorAccent">#FF4081</color>
+    <color name="newColorAccentAs">#FF4081</color>
+
+
+    <color name="red">#800000</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="purple">#800080</color>
+    <color name="purple_deep">#670067</color>
+    <color name="btnGreen">#50bc4a</color>
+    <color name="yellow">#FFDD00</color>
+    <color name="yellow_50">#80FFDD00</color>
+
+    <color name="abc">#106187</color>
+
+
+    <color name="arkus_50">#8066B330</color>
+    <color name="clean_50">#800991D1</color>
+
+    <!--logo colors-->
+    <color name="arkus">#66B330</color>
+    <color name="clean">#0991D1</color>
+    <color name="generales">#595A5C</color>
+
+
+
+</resources>

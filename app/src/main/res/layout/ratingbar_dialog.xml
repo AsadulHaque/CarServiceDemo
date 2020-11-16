@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/clean"
+    android:padding="@dimen/_8sdp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="@string/your_ratings"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/rating_close_id"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:text="X"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:background="@drawable/circle_background"
+            android:layout_alignParentEnd="true"
+            />
+
+    </RelativeLayout>
+
+
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:theme="@style/RatingBar"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_id"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/clean"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:background="@drawable/homecards_round2"
+        android:text="@string/submit"
+        android:textSize="@dimen/_12ssp" />
+
+</LinearLayout>

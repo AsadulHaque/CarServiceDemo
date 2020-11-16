@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_id"
+        android:theme="@style/ToolBarStyle"
+        android:background="@color/clean"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_below="@+id/settingsIvId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearId"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/provider_pp"
+        android:layout_width="196dp"
+        android:layout_height="196dp"
+        android:src="@drawable/profile_pic"
+        app:civ_border_color="#FFFFFFFF"
+        app:civ_border_width="2dp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/provider_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/name"
+        android:paddingBottom="@dimen/_8sdp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/provider_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/address"
+        android:textColor="@color/black"
+        android:paddingBottom="@dimen/_8sdp"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/phone_number"
+        android:textColor="@color/black"
+        android:paddingBottom="@dimen/_8sdp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/provider_phoneNo"
+        />
+    <TextView
+        android:id="@+id/provider_available_or_not"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/not_available_now"
+        android:textColor="@color/black"
+        android:paddingBottom="@dimen/_8sdp"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/joining_date"
+            android:textColor="@color/black"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_marginStart="@dimen/_4sdp"
+            android:id="@+id/provider_joining_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25 june,2020"
+            android:textColor="@color/black"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textSize="20sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startMapId"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_map"
+        android:textColor="@color/white"
+        android:onClick="startMap"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_round"
+        />
+
+</RelativeLayout>

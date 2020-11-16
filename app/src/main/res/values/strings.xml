@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Car Service</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_drivers_settings">masum</string>
+    <string name="title_activity_customers_map">Map</string>
+    <string name="forgot_your_password">Forgot Your Password</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="change_langulage">Change langulage</string>
+    <string name="logout">Logout</string>
+    <string name="customer_profile">Customer profile</string>
+    <string name="please_wait">Please wait</string>
+    <string name="while_system_performing">While system is performing processing on your data...</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="register">Register</string>
+    <string name="please_register_to_continue">Please register to continue</string>
+    <string name="name">Name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="address">Address</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="select_service">Select Service:</string>
+    <string name="go_to_map">Go to map</string>
+    <string name="availability">Availability</string>
+    <string name="not_available_now">Not available now</string>
+    <string name="joining_date">Joining Date: </string>
+    <string name="i_m_a_customer">I\'m a Customer</string>
+    <string name="i_m_a_service_provider">I\'m a Service Provider</string>
+    <string name="ratings">Ratings</string>
+    <string name="experience">Experience</string>
+    <string name="hire">Take service</string>
+    <string name="give_ratings">Give Ratings</string>
+    <string name="your_ratings">Your ratings</string>
+    <string name="submit">Submit</string>
+    <string name="driver">Driver</string>
+    <string name="electrician">Electrician</string>
+    <string name="ambulance_service">Ambulance Service</string>
+    <string name="tv_setup">Tv Setup</string>
+    <string name="air_cooler_service">Air Cooler Service</string>
+    <string name="home_painting_service">Home Painting Service</string>
+    <string name="cleaning">Cleaning</string>
+    <string name="professional_wedding_photographer">Professional Wedding Photographer</string>
+    <string name="email_or_password_field_is_empty">Email or Password field is empty</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="you_did_not_register">You didn\'t register, please register first</string>
+    <string name="fill_up_all_the_fields">Fill up all the fields</string>
+    <string name="password_not_matched">Password not matched</string>
+    <string name="complete_registration">Complete registration</string>
+    <string name="try_again">Try again, you may already registered</string>
+    <string name="failed_to_upload_image">Failed to upload image, try again</string>
+    <string name="no_image_selected">No image selected</string>
+    <string name="me">You</string>
+    <string name="found_nearby_you_founded_in">\" found nearby you, founded in \"</string>
+    <string name="found_nearby_you">\" found nearby you \"</string>
+    <string name="no">"No \"</string>
+    <string name="no_image_found_in_database">No image found in database</string>
+    <string name="service_provider_profile">Service provider profile</string>
+    <string name="email">Email</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="update_your_profile">Update your profile</string>
+    <string name="update">Update</string>
+    <string name="you_hired_this_provider">Service request sent</string>
+    <string name="no_ambulance">\"No Ambulance found nearby you, founded in \"</string>
+    <string name="no_tv">"No Tv service provider found nearby you, founded in "</string>
+    <string name="no_air_cooler">"No Air Cooler service provider found nearby you, founded in "</string>
+    <string name="no_painting">"No Home Painting service found, nearby you, founded in "</string>
+    <string name="no_photographer">"No Wedding Photographer foudd nearby you, founed in "</string>
+    <string name="no_cleaner">"No Cleaner found nearby you, founded in "</string>
+    <string name="not_available">\"No available \"</string>
+    <string name="founded_nearby_you">\" found nearby you\"</string>
+    <string name="sorry_this">\"Sorry! This \"</string>
+    <string name="is_already_being_hired">\" is already being hired.\"</string>
+    <string name="profile_updated">Profile updated</string>
+    <string name="not_available_noww">Not Available</string>
+    <string name="cancel">Cancel service</string>
+    <string name="new_notification">Service request</string>
+    <string name="you_are_hired">You are hired</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="you_are_hired_by">Service request from</string>
+    <string name="call">Call</string>
+    <string name="see_on_map">See on map</string>
+    <string name="cancel_hire">Cancel service</string>
+    <string name="want_to_cancel_hire">Are you sure, you want to cancel service request?</string>
+    <string name="yes">Yes</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="gps_network_not_enabled">To continue, let your device turn on locatoin service using Google\'s Location Service</string>
+    <string name="ok">Ok</string>
+
+    <string-array name="services_array">
+
+        <item>Select Service</item>
+        <item>Toyota</item>
+        <item>Nissan</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>Mitsubishi</item>
+        <item>Mazda</item>
+        <item>German Cars</item>
+        <item>All Types Car</item>
+
+    </string-array>
+
+</resources>

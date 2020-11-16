@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/yellow">
+
+    <include
+        android:id="@+id/toolbar_id"
+        layout="@layout/toolbar_layout"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_img"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/homecards_round2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_customers_img"
+                android:padding="@dimen/_12sdp"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:src="@drawable/pp_icon"
+                android:onClick="chooseImageFromGallery"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mid_body"
+        android:orientation="vertical"
+        android:textSize="@dimen/_15ssp"
+        android:layout_margin="10dp">
+        <EditText
+            android:id="@+id/reg_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_4sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:drawableStart="@drawable/ic_person_black_24dp"
+            android:background="@drawable/homecards_round2"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/_10sdp"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            tools:ignore="NestedWeights" />
+        <EditText
+            android:id="@+id/reg_phone_number"
+            android:hint="@string/phone_number"
+            android:drawableLeft="@drawable/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_4sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/homecards_round2"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/reg_address"
+            android:hint="@string/address"
+            android:drawableStart="@drawable/address_black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:padding="@dimen/_4sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@drawable/homecards_round2"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:text="@string/update"
+        android:id="@+id/update_btn"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_round" />
+
+</LinearLayout>

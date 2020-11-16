@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:padding="@dimen/_16sdp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/log_email"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+            android:drawablePadding="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_37sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/homecards_round2"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/_8sdp"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/log_password"
+            android:drawableStart="@drawable/password_black"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:drawablePadding="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_37sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@drawable/homecards_round2"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/_8sdp"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/password_black"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingLeft="@dimen/_8sdp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/log_forget_pass"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="#FF000000"
+            android:textAlignment="textEnd"
+            android:text="@string/forget_password"
+            android:textSize="@dimen/_12ssp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/_10sdp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/log_login_button"
+        android:text="@string/login"
+        android:background="@drawable/btn_round"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/don_t_have_an_account"
+                android:textAlignment="textEnd"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/_12ssp"
+                android:paddingRight="@dimen/_10sdp"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/log_register_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="@string/register"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                android:paddingRight="@dimen/_10sdp"
+                android:gravity="start" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/yellow"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_8sdp"
+        android:background="@color/yellow"
+        tools:context=".customer.CustomerRegisterActivity">
+
+        <TextView
+            android:id="@+id/txtR"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/white"
+            android:text="@string/please_register_to_continue"
+            android:gravity="center_horizontal" />
+
+        <LinearLayout
+            android:layout_below="@+id/txtR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_img"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/homecards_round2">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:padding="@dimen/_12sdp"
+                    android:id="@+id/profile_image_customers_img"
+                    android:layout_width="@dimen/_130sdp"
+                    android:layout_height="@dimen/_130sdp"
+                    android:src="@drawable/pp_icon"
+                    android:onClick="chooseImageFromGallery"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/mid_body"
+            android:layout_below="@+id/profile_img"
+            android:layout_above="@+id/update_btn"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textSize="@dimen/_14ssp">
+
+                <EditText
+                    android:id="@+id/reg_name"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/homecards_round2"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textAlignment="center"
+                    android:drawableLeft="@drawable/ic_person_black_24dp"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingLeft="@dimen/_8sdp" />
+
+                <EditText
+                    android:id="@+id/reg_phone_number"
+                    android:drawableLeft="@drawable/phone_number"
+                    android:hint="@string/phone_number"
+                    android:inputType="numberDecimal"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/homecards_round2"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textAlignment="center"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingLeft="@dimen/_8sdp" />
+
+                <EditText
+                    android:id="@+id/reg_address"
+                    android:drawableStart="@drawable/address_black"
+                    android:hint="@string/address"
+                    android:inputType="text"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/homecards_round2"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textAlignment="center"
+                    android:drawableLeft="@drawable/address_black"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingLeft="@dimen/_8sdp" />
+
+
+                <EditText
+                    android:id="@+id/reg_email"
+                    android:drawableLeft="@drawable/ic_email_black_24dp"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/email"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/homecards_round2"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textAlignment="center"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingLeft="@dimen/_8sdp" />
+
+                <EditText
+                    android:id="@+id/reg_password"
+                    android:drawableStart="@drawable/password_black"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/homecards_round2"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textAlignment="center"
+                    android:drawableLeft="@drawable/password_black"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:gravity="center_horizontal" />
+
+                <EditText
+                    android:id="@+id/reg_retype_pass"
+                    android:drawableLeft="@drawable/password_black"
+                    android:inputType="textPassword"
+                    android:hint="@string/confirm_password"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:background="@drawable/homecards_round2"
+                    android:textColor="@color/black"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textAlignment="center"
+                    android:paddingRight="@dimen/_16sdp"
+                    android:paddingLeft="@dimen/_8sdp" />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_above="@+id/abc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_37sdp"
+            android:textSize="@dimen/_15ssp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/register"
+            android:id="@+id/update_btn"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_round" />
+
+        <LinearLayout
+            android:id="@+id/abc"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:gravity="bottom|center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="@string/already_have_an_account"
+                    android:textAlignment="textEnd"
+                    android:textColor="#FF000000"
+                    android:textSize="@dimen/_12ssp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:gravity="end" />
+
+                <TextView
+                    android:id="@+id/reg_login_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="@string/login"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    android:paddingRight="@dimen/_10sdp"
+                    android:gravity="start" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+
